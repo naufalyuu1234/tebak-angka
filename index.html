@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tebak Angka Multiplayer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Permainan Tebak Angka</h1>
+
+        <!-- Form Input Nama Pemain -->
+        <div id="form-pemain">
+            <input type="text" id="namaPemain1" placeholder="Nama Player 1">
+            <input type="text" id="namaPemain2" placeholder="Nama Player 2">
+            <button id="mulai">Mulai Permainan</button>
+        </div>
+
+        <!-- Area Bermain -->
+        <div id="game-area" style="display: none;">
+            <p id="info-level">Pilih level kesulitan:</p>
+            <button class="level" data-level="1">Mudah (1-10)</button>
+            <button class="level" data-level="2">Sedang (1-20)</button>
+            <button class="level" data-level="3">Sulit (1-50)</button>
+
+            <p id="giliran" style="display: none;">Giliran <span id="namaGiliran"></span></p>
+            <input type="number" id="tebakan" style="display: none;" placeholder="Masukkan tebakan">
+            <button id="submit" style="display: none;">Submit Tebakan</button>
+            <p id="feedback"></p>
+        </div>
+
+        <!-- Tombol Restart -->
+        <button id="restart" style="display: none;">Main Lagi</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

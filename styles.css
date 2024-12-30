@@ -1,0 +1,88 @@
+/* CSS Default untuk Desktop */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#feedback {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Tombol Restart */
+button#restart {
+    background-color: #f44336;
+}
+
+button#restart:hover {
+    background-color: #e41e1e;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input, button {
+        width: 100%; /* Full width pada layar kecil */
+        font-size: 16px; /* Sedikit lebih besar agar mudah diklik */
+    }
+
+    h1 {
+        font-size: 24px; /* Ukuran font lebih kecil untuk layar kecil */
+    }
+
+    #feedback {
+        font-size: 14px; /* Supaya teks terlihat proporsional */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 8px 15px; /* Sedikit lebih kecil */
+    }
+
+    input {
+        font-size: 14px;
+    }
+}
